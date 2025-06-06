@@ -1,0 +1,92 @@
+### AUTHORS
+
+### Create Author
+POST http://localhost:3000/authors
+Content-Type: application/json
+
+{
+  "name": "Ngũgĩ wa Thiong'o",
+  "birthYear": 1938
+}
+
+### Get All Authors
+GET http://localhost:3000/authors
+
+### Get Author by ID
+GET http://localhost:3000/authors/1
+
+### Update Author
+PUT http://localhost:3000/authors/1
+Content-Type: application/json
+
+{
+  "name": "Ngũgĩ wa Thiong'o (Updated)",
+  "birthYear": 1939
+}
+
+### Delete Author
+DELETE http://localhost:3000/authors/1
+
+
+
+### BOOKS
+
+### Create Book
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "Weep Not, Child",
+  "authorId": 1,
+  "publishedYear": 1964
+}
+
+### Get All Books
+GET http://localhost:3000/books
+
+### Get Book by ID
+GET http://localhost:3000/books/1
+
+### Update Book
+PUT http://localhost:3000/books/1
+Content-Type: application/json
+
+{
+  "title": "Weep Not, Child - Revised Edition",
+  "authorId": 1,
+  "publishedYear": 1965
+}
+
+### Delete Book
+DELETE http://localhost:3000/books/1
+
+
+
+### MEMBERS
+
+### Register Member
+POST http://localhost:3000/members
+Content-Type: application/json
+
+{
+  "name": "Akinyi Atieno",
+  "email": "akinyi.atieno@example.com"
+}
+
+### Get All Members
+GET http://localhost:3000/members
+
+### Get Member by ID
+GET http://localhost:3000/members/1
+
+### Update Member
+PUT http://localhost:3000/members/1
+Content-Type: application/json
+
+{
+  "name": "Akinyi Atieno (Updated)",
+  "email": "akinyi.atieno.updated@example.com"
+}
+
+### Delete Member
+DELETE http://localhost:3000/members/1
